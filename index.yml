@@ -1,0 +1,12 @@
+config:
+  target: "https://senorgrande.github.io"
+  phases:
+    - duration: 10
+      arrivalRate: 1
+      name: Load
+
+scenarios:
+  - name: "Load Test the API"
+    flow:
+      - get:
+          url: "/blog"
