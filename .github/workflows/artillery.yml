@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  artillery-job:
+    runs-on: ubuntu-latest
+    name: Run Load Test
+    steps:
+    - uses: actions/checkout@v1
+    - name: Artillery
+      users: SenorGrande/automated-artillery-action@develop
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      with:
+        artillery_path: 'index.yml'
