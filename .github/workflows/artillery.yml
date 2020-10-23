@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Artillery
-      users: SenorGrande/automated-artillery-action@develop
+      uses: SenorGrande/automated-artillery-action@develop
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
