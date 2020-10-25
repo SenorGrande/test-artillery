@@ -12,3 +12,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         artillery_path: 'index.yml'
+        output_path: 'reports'
