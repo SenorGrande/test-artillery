@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Load Test
     steps:
-    - uses: actions/checkout@feat/generate-pdf-report
+    - uses: actions/checkout@v1
     - name: Artillery
-      uses: SenorGrande/automated-artillery-action@feat/unique-report-name
+      uses: SenorGrande/automated-artillery-action@feat/generate-pdf-report
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
