@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Load Test
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@feat/generate-pdf-report
     - name: Artillery
       uses: SenorGrande/automated-artillery-action@feat/unique-report-name
       env:
